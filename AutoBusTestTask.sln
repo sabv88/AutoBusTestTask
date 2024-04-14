@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoBusTestTask", "AutoBusTestTask\AutoBusTestTask.csproj", "{226384E1-99A3-4C9C-8DA2-845693AC3F2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoBusTestTaskTests", "AutoBusTestTaskTests\AutoBusTestTaskTests.csproj", "{773F1D25-914C-482D-B267-1DA51911A787}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226384E1-99A3-4C9C-8DA2-845693AC3F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226384E1-99A3-4C9C-8DA2-845693AC3F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226384E1-99A3-4C9C-8DA2-845693AC3F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226384E1-99A3-4C9C-8DA2-845693AC3F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773F1D25-914C-482D-B267-1DA51911A787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773F1D25-914C-482D-B267-1DA51911A787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773F1D25-914C-482D-B267-1DA51911A787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773F1D25-914C-482D-B267-1DA51911A787}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AFAE111-7A57-42D1-8FB1-735214FB3635}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<AutoBusTestTask.Models.Url>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>
+        <a asp-action="CreateUrlView">Сократить Url</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Длинный URL
+                </th>
+                <th>
+                    Сокращенный URL
+                </th>
+                <th>
+                    Дата создания
+                </th>
+                <th>
+                    Количество переходов
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OriginalUrl)
+                    </td>
+                    <td>
+                        @Html.ActionLink(item.ShortUrl, "RedirectToOriginalUrlThrowTable", "Home", new{ shortUrl = item.ShortUrl}, null)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreationDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RedirectCount)
+                    </td>
+                    <td>
+                        <a asp-action="EditUrlView" asp-route-id="@item.Id">Изменить</a> |
+                        <a asp-action="DeleteUrlView" asp-route-id="@item.Id">Удалить</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
